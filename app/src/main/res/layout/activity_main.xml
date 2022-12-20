@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sudoku Solver"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <TableLayout
+        android:id="@+id/tablelout"
+        android:layout_width="match_parent"
+
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/box00"
+
+                android:layout_margin="4dp"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box01"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box02"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box03"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+
+                android:layout_margin="4dp"
+                android:id="@+id/box04"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box05"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box06"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box07"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box08"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box10"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box11"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box12"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box13"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box14"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box15"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box16"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box17"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box18"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box20"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box21"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box22"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box23"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box24"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box25"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box26"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box27"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box28"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box30"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box31"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box32"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box33"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box34"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box35"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box36"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box37"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box38"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box40"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box41"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box42"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box43"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box44"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box45"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box46"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box47"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box48"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box50"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box51"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box52"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box53"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box54"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box55"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box56"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box57"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box58"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box60"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box61"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box62"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box63"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box64"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box65"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box66"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box67"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box68"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box70"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box71"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box72"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box73"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box74"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box75"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box76"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box77"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box78"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box80"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box81"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box82"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box83"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box84"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+
+                android:layout_margin="4dp"
+                android:id="@+id/box85"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box86"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box87"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+
+            <EditText
+                android:layout_margin="4dp"
+                android:id="@+id/box88"
+                android:inputType="numberDecimal"
+                android:maxLength="1"
+                android:text="0" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Calculate Sudoko"
+        android:textAllCaps="false"
+
+        />
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Clear sudoko"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Credits"
+        android:textAllCaps="false"
+        />
+
+
+
+
+</LinearLayout>
